@@ -1,0 +1,38 @@
+[07/30/24 20:24:42] - Running wine-5.0.2 --version (Working directory : /home/aniketdatta/.PlayOnLinux/wine/linux-amd64/5.0.2)
+wine-5.0.2
+
+PlayOnLinux logfile
+-------------------
+Date: 07/30/24 20:24:42
+
+> PlayOnLinux Version
+  4.3.4
+> uname -a
+  Linux Maths 6.1.0-23-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.99-1 (2024-07-15) x86_64 GNU/Linux
+> lsb_release -a
+  
+> wine --version
+  wine-5.0.2
+> POL_WINEVERSION
+  5.0.2
+> WINEPREFIX
+  /home/aniketdatta/.PlayOnLinux//wineprefix/7zip
+> Distribution
+  Debian GNU/Linux 12 (bookworm)
+> glxinfo \| grep rendering
+  direct rendering: Yes
+> glxinfo \| grep renderer
+      GLX_MESA_copy_sub_buffer, GLX_MESA_query_renderer, GLX_MESA_swap_control, 
+    GLX_MESA_query_renderer, GLX_OML_swap_method, GLX_SGIS_multisample, 
+Extended renderer info (GLX_MESA_query_renderer):
+OpenGL renderer string: llvmpipe (LLVM 15.0.6, 256 bits)
+> OpenGL libs (Direct rendering testing)
+  check_dd_x86 missing, test skipped
+  check_dd_amd64 missing, test skipped
+
+[07/30/24 20:26:16] - Running wine-5.0.2 cmd /c echo %ProgramFiles% (Working directory : /home/aniketdatta/.PlayOnLinux/wine/linux-amd64/5.0.2)
+C:\Program Files (x86)
+[07/30/24 20:27:16] - Running wine-5.0.2 /home/aniketdatta/.PlayOnLinux//tmp/7zip/7z1900-x64.exe (Working directory : /home/aniketdatta/.PlayOnLinux/tmp/7zip)
+[07/30/24 20:27:31] - Running wine-5.0.2 winepath -u C:\\users\\aniketdatta\\Desktop (Working directory : /home/aniketdatta/.local/share/applications)
+/home/aniketdatta/.PlayOnLinux//wineprefix/7zip/dosdevices/c:/users/aniketdatta/Desktop
+[07/30/24 20:28:25] - Running wine-5.0.2 7zFM.exe (Working directory : /home/aniketdatta/.PlayOnLinux/wineprefix/7zip/drive_c/Program Files/7-Zip)

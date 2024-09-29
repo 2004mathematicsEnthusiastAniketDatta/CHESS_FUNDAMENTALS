@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.7.4",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.7.0"
+  },
+  "dependencies": {
+    "inquirer": "^11.1.0"
+  }
+}

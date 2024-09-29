@@ -1,0 +1,9 @@
+#!/usr/bin/env playonlinux-bash
+[ "$PLAYONLINUX" = "" ] && exit 0
+source "$PLAYONLINUX/lib/sources"
+export WINEPREFIX="/home/aniketdatta/.PlayOnLinux//wineprefix/7zip"
+export WINEDEBUG="-all"
+#POL_Log=7-Zip
+#ScriptID=7-Zip
+cd "/home/aniketdatta/.PlayOnLinux//wineprefix/7zip/drive_c/./Program Files/7-Zip"
+POL_Wine "7zFM.exe"  "$@"

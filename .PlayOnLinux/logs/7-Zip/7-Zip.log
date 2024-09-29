@@ -1,0 +1,172 @@
+PlayOnLinux debugging tool (v4.3.4)
+-----------------------------------------------
+Debugging: 7-Zip
+
+Warning: This is a PlayOnLinux script logfile. It does not contain everything that happened in your program\'s virtual drive (wineprefix)
+Please do not use this logfile on winehq forum, this logfile is not interesting for wine debugging.
+
+Date: 07/30/24 20:20:52
+
+> uname -a
+  Linux Maths 6.1.0-23-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.99-1 (2024-07-15) x86_64 GNU/Linux
+> lsb_release -a
+  
+> wine --version (Be careful; this version might not be the version used
+in the script. Read the content of this file for more information)
+  wine-9.14
+> glxinfo \| grep rendering
+  direct rendering: Yes
+> glxinfo \| grep renderer
+      GLX_MESA_copy_sub_buffer, GLX_MESA_query_renderer, GLX_MESA_swap_control, 
+    GLX_MESA_query_renderer, GLX_OML_swap_method, GLX_SGIS_multisample, 
+Extended renderer info (GLX_MESA_query_renderer):
+OpenGL renderer string: llvmpipe (LLVM 15.0.6, 256 bits)
+> OpenGL libs
+  check_dd_x86 missing, test skipped
+  check_dd_amd64 missing, test skipped
+> export
+  declare -x AMD64_COMPATIBLE="True"
+declare -x APPLICATION_TITLE="PlayOnLinux"
+declare -x CINNAMON_VERSION="5.6.8"
+declare -x DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
+declare -x DEBIAN_PACKAGE="TRUE"
+declare -x DESKTOP="/home/aniketdatta/Desktop"
+declare -x DESKTOP_SESSION="lightdm-xsession"
+declare -x DISPLAY=":0"
+declare -x DONT_MONITOR="1"
+declare -x DYLDPATH_ORIGIN=""
+declare -x DYLD_LIBRARY_PATH=""
+declare -x GDMSESSION="lightdm-xsession"
+declare -x GECKO_SITE="http://wine.playonlinux.com/gecko"
+declare -x GIO_LAUNCHED_DESKTOP_FILE="/usr/share/applications/PlayOnLinux.desktop"
+declare -x GIO_LAUNCHED_DESKTOP_FILE_PID="21060"
+declare -x GJS_DEBUG_OUTPUT="stderr"
+declare -x GJS_DEBUG_TOPICS="JS ERROR;JS LOG"
+declare -x GNOME_DESKTOP_SESSION_ID="this-is-deprecated"
+declare -x GNUPGHOME="/home/aniketdatta/.PlayOnLinux//gpg"
+declare -x GPG_AGENT_INFO="/run/user/1000/gnupg/S.gpg-agent:0:1"
+declare -x GTK3_MODULES="xapp-gtk3-module"
+declare -x GTK_MODULES="gail:atk-bridge"
+declare -x GTK_OVERLAY_SCROLLING="0"
+declare -x G_FILENAME_ENCODING="UTF-8"
+declare -x HOME="/home/aniketdatta"
+declare -x IGNORE_ICON_DIR="false"
+declare -x LANG="en_IN"
+declare -x LANGUAGE="en_IN:en"
+declare -x LD_32_PATH_ORIGIN=""
+declare -x LD_LIBRARY_PATH=""
+declare -x LD_PATH_ORIGIN=""
+declare -x LOGNAME="aniketdatta"
+declare -x MACHTYPE="x86_64-pc-linux-gnu"
+declare -x MD5_COMMAND="md5sum"
+declare -x MONO_SITE="http://wine.playonlinux.com/mono"
+declare -x OLDPWD="/home/aniketdatta/.PlayOnLinux/configurations/setups/7-Zip"
+declare -x OS_NAME="linux"
+declare -x OpenGL32="1"
+declare -x OpenGL64="1"
+declare -x PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/wine"
+declare -x PATH_ORIGIN="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/wine"
+declare -x PLAYONLINUX="/usr/share/playonlinux"
+declare -x POL_ARCH="x86"
+declare -x POL_COOKIE="2sN7wIQZFErmoBdq9Fe2"
+declare -x POL_CURL="curl"
+declare -x POL_DNS="playonlinux.com"
+declare -x POL_HOST="127.0.0.1"
+declare -x POL_ID="77905895"
+declare -x POL_LANG="en"
+declare -x POL_OS="Linux"
+declare -x POL_PORT="30000"
+declare -x POL_PYTHON="python3"
+declare -x POL_SetupWindow_ID="22096"
+declare -x POL_TERM="x-terminal-emulator"
+declare -x POL_UPTODATE="TRUE"
+declare -x POL_USER_ARCH="x86"
+declare -x POL_USER_ROOT="/home/aniketdatta/.PlayOnLinux/"
+declare -x POL_WGET="env LD_LIBRARY_PATH=\"\" wget --prefer-family=IPv4 -q"
+declare -x PWD="/usr/share/playonlinux/python"
+declare -x QT_ACCESSIBILITY="1"
+declare -x REPERTOIRE="/home/aniketdatta/.PlayOnLinux/"
+declare -x SCRIPTID="7-Zip"
+declare -x SED="sed"
+declare -x SESSION_MANAGER="local/Maths:@/tmp/.ICE-unix/2273,unix/Maths:/tmp/.ICE-unix/2273"
+declare -x SETUPWINDOW_INIT="true"
+declare -x SHELL="/bin/bash"
+declare -x SHLVL="3"
+declare -x SITE="http://repository.playonlinux.com"
+declare -x SSH_AGENT_PID="2334"
+declare -x SSH_AUTH_SOCK="/run/user/1000/keyring/ssh"
+declare -x TEXTDOMAIN="pol"
+declare -x TITLE="7-Zip"
+declare -x TITRE="PlayOnLinux"
+declare -x UBUNTU_MENUPROXY="0"
+declare -x USER="aniketdatta"
+declare -x VERSION="4.3.4"
+declare -x WGETRC="/home/aniketdatta/.PlayOnLinux//configurations/wgetrc"
+declare -x WINEDLLOVERRIDES="winemenubuilder.exe=d"
+declare -x WINEPREFIX="/home/aniketdatta/.PlayOnLinux//wineprefix/default"
+declare -x WINE_SITE="https://phoenicis.playonlinux.com/index.php/wine?os=linux"
+declare -x WorkingDirectory="/home/aniketdatta"
+declare -x XAUTHORITY="/home/aniketdatta/.Xauthority"
+declare -x XDG_CURRENT_DESKTOP="X-Cinnamon"
+declare -x XDG_DATA_DIRS="/usr/share/gnome:/home/aniketdatta/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share"
+declare -x XDG_GREETER_DATA_DIR="/var/lib/lightdm/data/aniketdatta"
+declare -x XDG_RUNTIME_DIR="/run/user/1000"
+declare -x XDG_SEAT="seat0"
+declare -x XDG_SEAT_PATH="/org/freedesktop/DisplayManager/Seat0"
+declare -x XDG_SESSION_CLASS="user"
+declare -x XDG_SESSION_DESKTOP="lightdm-xsession"
+declare -x XDG_SESSION_ID="2"
+declare -x XDG_SESSION_PATH="/org/freedesktop/DisplayManager/Session0"
+declare -x XDG_SESSION_TYPE="x11"
+declare -x XDG_VTNR="7"
+
+
+07/30/24 20:20:57 - [POL_Wine_SelectPrefix] Message: Selecting prefix: 7zip
+07/30/24 20:20:57 - [POL_System_SetArch] Message: POL_ARCH set to amd64
+07/30/24 20:20:57 - [POL_Wine_PrefixCreate] Message: Setting POL_WINEVERSION to 5.0.2
+07/30/24 20:20:57 - [POL_Wine_PrefixCreate] Message: Creating prefix (5.0.2)...
+07/30/24 20:20:57 - [POL_Wine_PrefixCreate] Message: Using wine 5.0.2
+07/30/24 20:20:57 - [POL_Wine_InstallVersion] Message: Installing wine version path: 5.0.2, amd64
+07/30/24 20:20:57 - [POL_Wine_InstallVersion] Message: Wine site: https://phoenicis.playonlinux.com/index.php/wine?os=linux
+07/30/24 20:21:01 - [POL_Wine_InstallVersion] Message: Winebuild data: {
+  "version": "5.0.2",
+  "url": "http://www.playonlinux.com/wine/binaries/phoenicis/upstream-linux-amd64/PlayOnLinux-wine-5.0.2-upstream-linux-amd64.tar.gz",
+  "sha1sum": "699d9593f9868e8792a236da015ba86bd1a0f53a",
+  "geckoFile": null,
+  "geckoUrl": null,
+  "geckoMd5": null,
+  "monoFile": null,
+  "monoUrl": null,
+  "monoMd5": null
+}
+07/30/24 20:21:01 - [POL_Wine_InstallVersion] Message: Wine address found: http://www.playonlinux.com/wine/binaries/phoenicis/upstream-linux-amd64/PlayOnLinux-wine-5.0.2-upstream-linux-amd64.tar.gz
+07/30/24 20:24:42 - [POL_Config_PrefixWrite] Message: Prefix config write: ARCH amd64
+07/30/24 20:24:42 - [POL_Config_PrefixWrite] Message: Prefix config write: VERSION 5.0.2
+07/30/24 20:24:42 - [POL_Wine] Message: Running wine-5.0.2 --version (Working directory : /home/aniketdatta/.PlayOnLinux/wine/linux-amd64/5.0.2)
+07/30/24 20:24:42 - [POL_Wine] Message: Notice: PlayOnLinux deliberately disables winemenubuilder. See http://www.playonlinux.com/fr/page-26-Winemenubuilder.html
+wine-5.0.2
+07/30/24 20:24:42 - [POL_Wine] Message: Wine return: 0
+07/30/24 20:26:16 - [POL_LoadVar_PROGRAMFILES] Message: Getting Program Files name
+07/30/24 20:26:16 - [POL_Wine] Message: Running wine-5.0.2 cmd /c echo %ProgramFiles% (Working directory : /home/aniketdatta/.PlayOnLinux/wine/linux-amd64/5.0.2)
+07/30/24 20:26:16 - [POL_Wine] Message: Notice: PlayOnLinux deliberately disables winemenubuilder. See http://www.playonlinux.com/fr/page-26-Winemenubuilder.html
+C:\Program Files (x86)
+07/30/24 20:26:18 - [POL_Wine] Message: Wine return: 0
+07/30/24 20:26:36 - [POL_SetupWindow_icon_menu] Message: icon_menu answer: 
+07/30/24 20:26:40 - [POL_SetupWindow_icon_menu] Message: icon_menu answer: 
+07/30/24 20:26:43 - [POL_SetupWindow_icon_menu] Message: icon_menu answer: 
+07/30/24 20:27:09 - [POL_SetupWindow_icon_menu] Message: icon_menu answer: Download the program
+07/30/24 20:27:09 - [POL_SetupWindow_InstallMethod] Message: Install method: DOWNLOAD
+07/30/24 20:27:09 - [POL_Download] Message: Downloading https://7-zip.org/a/7z1900-x64.exe
+07/30/24 20:27:16 - [POL_Download] Message: Download MD5 matches
+07/30/24 20:27:16 - [POL_System_CheckFS] Message: Checking filesystem for /home/aniketdatta/.PlayOnLinux//tmp/7zip/7z1900-x64.exe
+07/30/24 20:27:16 - [POL_Wine] Message: Running wine-5.0.2 /home/aniketdatta/.PlayOnLinux//tmp/7zip/7z1900-x64.exe (Working directory : /home/aniketdatta/.PlayOnLinux/tmp/7zip)
+07/30/24 20:27:16 - [POL_Wine] Message: Notice: PlayOnLinux deliberately disables winemenubuilder. See http://www.playonlinux.com/fr/page-26-Winemenubuilder.html
+07/30/24 20:27:31 - [POL_Wine] Message: Wine return: 0
+07/30/24 20:27:31 - [POL_Shortcut] Message: Looking for <7zFM.exe>, found <./Program Files/7-Zip/7zFM.exe>
+07/30/24 20:27:31 - [POL_Wine_GetRegValue] Message: Getting registry value Desktop. Return: C:\\users\\aniketdatta\\Desktop
+07/30/24 20:27:31 - [POL_Wine] Message: Running wine-5.0.2 winepath -u C:\\users\\aniketdatta\\Desktop (Working directory : /home/aniketdatta/.local/share/applications)
+/home/aniketdatta/.PlayOnLinux//wineprefix/7zip/dosdevices/c:/users/aniketdatta/Desktop
+07/30/24 20:27:31 - [POL_Wine] Message: Wine return: 0
+07/30/24 20:27:31 - [CleanLnkDesktop] Message: Clean user's Windows desktop: C:\\users\\aniketdatta\\Desktop => /home/aniketdatta/.PlayOnLinux//wineprefix/7zip/dosdevices/c:/users/aniketdatta/Desktop
+07/30/24 20:27:31 - [POL_Shortcut] Message: Shortcut created: 7zFM.exe 7-Zip
+07/30/24 20:27:31 - [POL_SetupWindow_Close] Message: Closing window for pid 22096
